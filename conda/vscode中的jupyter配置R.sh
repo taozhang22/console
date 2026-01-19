@@ -1,7 +1,7 @@
 # 教程：https://mp.weixin.qq.com/s/85n8sgOEGMeb9TcKJKlkvg
 conda activate base
-conda create -n R -y
-conda activate R
+conda create -n R_4.5.2 -y
+conda activate R_4.5.2
 
 conda search r-base # 查看有哪些R的版本可以安装
 conda install r-base=4.5.2 -y
