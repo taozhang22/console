@@ -1,4 +1,5 @@
 # 教程：https://mp.weixin.qq.com/s/85n8sgOEGMeb9TcKJKlkvg
+conda activate base
 conda create -n R -y
 conda activate R
 
