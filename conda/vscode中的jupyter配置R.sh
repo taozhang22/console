@@ -19,6 +19,7 @@ conda install r-lattice -y
 conda install r-matrix -y
 conda install r-seuratobject -y
 conda install jupyterlab r-irkernel -y
+conda install r-qs2 -y
 
 R
 IRkernel::installspec(user = FALSE)
