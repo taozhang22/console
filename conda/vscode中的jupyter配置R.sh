@@ -17,6 +17,6 @@ conda install r-cowplot -y
 conda install data.table -y
 conda install jupyterlab r-irkernel -y
 
-R # 激活R
+R
 IRkernel::installspec(user = FALSE)
-q()  # 退出 R
+q()
