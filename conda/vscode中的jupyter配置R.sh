@@ -16,6 +16,7 @@ conda install r-tidyverse -y
 conda install r-cowplot -y
 conda install data.table -y
 conda install r-lattice -y
+conda install r-matrix
 conda install jupyterlab r-irkernel -y
 
 R
