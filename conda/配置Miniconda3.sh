@@ -1,11 +1,21 @@
 # 教程：https://docs.conda.io/projects/conda/en/stable/user-guide/install/windows.html
-# https://docs.conda.io/projects/conda/en/stable/index.html#
+# https://docs.conda.io/projects/conda/en/stable/index.html
 ###############################################################################################
 # 下载并且安装miniconda
 ###############################################################################################
+# win
 cd /d D:\download
 curl -L -o Miniconda3-latest-Windows-x86_64.exe https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-latest-Windows-x86_64.exe
-setx PATH "D:\software\Miniconda3\condabin;D:\software\Miniconda3\Scripts;$env:PATH" # powershell
+setx PATH "D:\software\Miniconda3\condabin;%PATH%" # setx设置的是“永久环境变量”，当前这个 CMD 窗口不会立刻生效，你得新开一个 CMD
+D:\software\Miniconda3\condabin\conda.bat init cmd.exe
+
+# linux
+cd ~/software
+wget https://repo.anaconda.com/miniconda/Miniconda3-py310_24.9.2-0-Linux-x86_64.sh -O miniconda.sh
+bash miniconda.sh -b -p ~/software/miniconda3
+rm -f miniconda.sh
+export PATH="$HOME/software/miniconda3/bin:$PATH"
+~/software/miniconda3/bin/conda init bash # 当前这个 CMD 窗口不会立刻生效，你得新开一个 CMD
 
 #########################################################################################
 # 接受协议
