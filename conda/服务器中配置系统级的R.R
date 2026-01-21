@@ -17,3 +17,10 @@ source ~/.bashrc 2>/dev/null || true
 hash -r
 which R
 R --version
+
+让 VS Code 知道你的 R 路径（关键）
+
+打开 VS Code 设置（Settings）搜索 rterm linux
+然后把 R: Rterm: Linux 设置为：
+
+/home/students/zhangtao/software/R/4.4.2/bin/R
