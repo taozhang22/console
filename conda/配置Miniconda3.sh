@@ -14,6 +14,7 @@ cd ~/software
 wget https://repo.anaconda.com/miniconda/Miniconda3-py310_24.9.2-0-Linux-x86_64.sh -O miniconda.sh
 bash miniconda.sh -b -p ~/software/miniconda3
 rm -f miniconda.sh
+export PATH="$HOME/software/miniconda3/condabin:$HOME/software/miniconda3/bin:$PATH"
 conda init
 echo "$PATH" | tr ':' '\n'
 
