@@ -10,4 +10,10 @@ cd R-4.4.2
 make -j 4
 make install
 
-
+grep -q 'software/R/4.4.2/bin' ~/.bashrc || echo 'export PATH="$HOME/software/R/4.4.2/bin:$PATH"' >> ~/.bashrc
+grep -q 'software/R/4.4.2/bin' ~/.profile || echo 'export PATH="$HOME/software/R/4.4.2/bin:$PATH"' >> ~/.profile
+source ~/.profile 2>/dev/null || true
+source ~/.bashrc 2>/dev/null || true
+hash -r
+which R
+R --version
