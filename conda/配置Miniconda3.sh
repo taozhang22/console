@@ -15,7 +15,7 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-py310_24.9.2-0-Linux-x86_64.
 bash miniconda.sh -b -p ~/software/miniconda3
 rm -f miniconda.sh
 export PATH="$HOME/software/miniconda3/bin:$PATH"
-~/software/miniconda3/bin/conda init bash # 当前这个 CMD 窗口不会立刻生效，你得新开一个 CMD
+echo "$PATH" | tr ':' '\n' | grep -i conda
 
 #########################################################################################
 # 接受协议
